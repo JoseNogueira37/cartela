@@ -41,7 +41,7 @@
         } else {
             // Se minha variável operação estiver vazia então devo gerar os scripts de update
             try{
-                $stmt = $pdo->prepare('UPDATE COMPRADOR SET NOME, CELULAR = :a, :b WHERE ID = :id');
+                $stmt = $pdo->prepare('UPDATE COMPRADOR SET NOME= :a, CELULAR = :b WHERE ID = :id');
                 $stmt->execute(array(
                     ':id' => $ID,
                      //':a' => utf8_decode($requestData['NOME'])
