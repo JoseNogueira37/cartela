@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas de Rifas</title>
-    <link rel="shortcut icon" href="img/tickets.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="libs/FontAwesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css">
+    <link rel="stylesheet" href="libs/sweetAlert/dist/sweetalert2.css">
+    <link rel="stylesheet" href="libs/DataTables/datatables.css">
+    <title>Sistema de gerenciamento de rifas</title>
 </head>
-
-<body class="text-center">
-    <form class="form-signin">
-        <img class="mb-4" src="img/tickets.png" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Faça login</h1>
-        <label class="sr-only">Usuario</label>
-        <input type="email" id="usuario" class="form-control" placeholder="Usuario" required="" autofocus="">
-        <label class="sr-only">Senha</label>
-        <input type="password" id="senha" class="form-control mt-3" placeholder="Senha" required="">
-        <div class="checkbox mb-3">
-            <label>
-            <input type="checkbox" value="remember-me"> Lembrar de mim
-          </label>
+<body>
+    
+    <div class="container mt-2">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card shadow">
+                    <img class="img-fluid" src="img/rifa.png" alt="rifa">
+                    <div class="card-body">
+                        <h5 class="card-title">Login do Sistema</h5>
+                        <form id="form-login">
+                            <div class="form-group">
+                                <label>Login</label>
+                                <input type="text" name="LOGIN" id="LOGIN" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input type="password" name="SENHA" id="SENHA" class="form-control">
+                            </div>
+                            <div class="form-group row justify-content-end">
+                                <div class="col-12 col-sm-8 col-md-6">
+                                    <a class="btn btn-dark btn-block btn-login" >
+                                        Entrar
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button class="btn btn-lg btn-success btn-block" type="submit"><i class="fa-solid fa-right-from-bracket"></i> Login</button>
-    </form>
-
-
+    </div>
+    
+    
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="src/vendedor/controle/login-vendedor.js"></script>
+    
 </body>
-
-
-<script src="js/jquery-3.6.0.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="libs/FontAwesome/js/all.js"></script>
-</body>
-
 </html>
